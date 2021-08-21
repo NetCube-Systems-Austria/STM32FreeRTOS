@@ -12,7 +12,6 @@ TaskHandle_t blink;
 //------------------------------------------------------------------------------
 // high priority for blinking LED
 static void vLEDFlashTask(void *pvParameters) {
-  UNUSED(pvParameters);
   pinMode(LED_PIN, OUTPUT);
 
   // Flash led every 200 ms.
@@ -32,7 +31,6 @@ static void vLEDFlashTask(void *pvParameters) {
 }
 //------------------------------------------------------------------------------
 static void vPrintTask(void *pvParameters) {
-  UNUSED(pvParameters);
   while (1) {
     // Sleep for one second.
     vTaskDelay(configTICK_RATE_HZ);

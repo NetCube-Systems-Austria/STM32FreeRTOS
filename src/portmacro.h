@@ -14,8 +14,6 @@
 
 #if (__CORTEX_M == 0x00U)
 #include "../portable/GCC/ARM_CM0/portmacro.h"
-/* Stub for heap_useNewlib_ST */
-inline __attribute__(( always_inline )) static BaseType_t xPortIsInsideInterrupt( void ) { return pdFALSE; }
 #endif
 
 #if (__CORTEX_M == 0x03U)
